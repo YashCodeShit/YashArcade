@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">YashArcade</h2>
+        <nav class="navigation">
+                <a href="index2.html" class="active">Lovete</a>
+                <a href="index1.html">PinBall</a>
+                <a href="index3.html">Blades</a>
+                <a href="index4.html">Ludo</a>
+        </nav>
+    </header>
+
+<section class="Parallax">
+    <img src="hill1.png" id="hill1">
+    <img src="hill2.png" id="hill2">
+    <img src="hill3.png" id="hill3">
+    <img src="hill4.png" id="hill4">
+    <img src="hill5.png" id="hill5">
+    <img src="tree.png" id="tree">
+    <h2 id="text">Lets Hustle!!</h2>
+    <img src="leaf.png" id="leaf">
+    <img src="plant.png" id="plant">
+</section>
+
+<section class="sec">
+<h2> Unleashing the Ultimate Gaming Experience </h2>
+<p>The realm of video gaming has undergone a transformative evolution, transitioning from the simple electronic games of the 1970s to today's complex, graphically rich virtual environments that engage millions of players worldwide. This transformation reflects not only advancements in technology but also a shift in the cultural and economic impact of gaming. Initially dismissed as mere child's play, gaming has burgeoned into a robust industry, rivaling traditional entertainment sectors like film and music in both revenue and cultural significance. The explosive growth of the industry is powered by continual technological innovations such as the development of 3D graphics, the rise of online multiplayer experiences, and the advent of mobile gaming, which has expanded the demographic reach of games to include all ages and backgrounds. This expansion is further exemplified by the emergence of esports, which has institutionalized gaming as a competitive sport, complete with professional teams, leagues, and multi-million dollar tournament prize pools that attract audiences comparable to those of conventional sports. Moreover, video games have evolved into complex narrative mediums that address a spectrum of themes, from identity and morality to social and political issues, offering players not only entertainment but also opportunities for personal and communal reflection. Community and shared experience are at the heart of modern gaming, with players forming global networks that transcend geographical and cultural boundaries, fostering an inclusive digital community that thrives on creativity, collaboration, and mutual respect. As the industry continues to grow, its influence spreads, impacting technology adoption in fields such as virtual and augmented reality, and promoting skills development in areas like strategic thinking, teamwork, and problem-solving. <br>
+<br>
+Amidst this widespread acceptance and growth, the social dynamics within gaming communities have also become a focal point of interest and concern. As these communities expand, they mirror the complexities of larger societal interactions, including both positive developments and challenges. Online gaming platforms, for example, have become vibrant social spaces where friendships are forged across continents, cultures are shared and celebrated, and collaborative problem-solving is commonplace. However, these platforms can also be breeding grounds for toxicity, such as cyberbullying, sexism, and other forms of discrimination, which mar the gaming experience for many. The industry's response to these issues has been multifaceted, involving enhanced moderation tools, stricter community guidelines, and initiatives aimed at fostering a more inclusive gaming culture. These efforts are critical in ensuring that gaming remains a safe and welcoming environment for all players. Additionally, the educational potential of video games is increasingly recognized, with educational institutions and companies leveraging gamification to teach everything from language arts to complex scientific concepts and soft skills like empathy and cooperation. This educational shift is supported by numerous studies highlighting the cognitive benefits of gaming, which include improved problem-solving skills, enhanced memory, and better hand-eye coordination. As gaming continues to evolve, it stands on the cusp of becoming a pivotal educational tool that combines engagement with effectiveness, potentially revolutionizing traditional educational methodologies and contributing to lifelong learning.<br><br></p>
+<br></br>
+
+</section>
+    <script src="script.js"></script>
+    <audio id="backgroundMusic" loop>
+        <source src="neon-gaming-128925.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="mute-button" onclick="toggleMute()"></button>
+
+    <script>
+        const audio = document.getElementById('backgroundMusic');
+        const muteButton = document.getElementById('mute-button');
+
+        // Function to toggle mute and update the button's appearance
+        function toggleMute() {
+            audio.muted = !audio.muted;
+
+            if (audio.muted) {
+                muteButton.style.background = 'url("https://icon-library.com/images/mute-icon/mute-icon-14.jpg") no-repeat center center';
+            } else {
+                muteButton.style.background = 'url("https://icon-library.com/images/unmute-icon.png") no-repeat center center';
+            }
+
+            muteButton.style.backgroundSize = 'contain';
+        }
+
+        // Ensure audio plays on page load if possible
+        window.addEventListener('DOMContentLoaded', (event) => {
+            audio.play().catch(error => {
+                console.log("Auto-play failed: User interaction required to start audio.");
+                audio.muted = true; // Ensure audio starts muted if auto-play fails
+                toggleMute(); // Update the button to show correct initial state
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="/about">Our Company</a></li>
+                    <li><a href="/team">Meet the Team</a></li>
+                    <li><a href="/history">Our History</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Business Ave, Suite 456<br>
+                City Name, ST 12345<br>
+                <a href="tel:+18001234567">(800) 123-4567</a></p>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Use</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <a href="http://www.facebook.com/yourcompany" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.twitter.com/yourcompany" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.instagram.com/yourcompany" class="social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.linkedin.com/company/yourcompany" class="social-icon"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="/subscribe" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024  Yash. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

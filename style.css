@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+min-height: 100vh;
+background: #f9f9f9
+/* overflow-x: hidden; */
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    color: #359381;
+    font-size: 2em;
+    position-event : none;
+    margin-right: 270px;
+}
+.navigation a
+{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius:20px;
+    margin : 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background:#359381;
+    color: #fff;
+}
+
+.Parallax
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text
+{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.Parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.sec
+{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+
+}
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+font-size: 1em;
+color: #fff;
+font-weight: 300;
+}
+/* Footer Styles */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+}
+
+.footer-section {
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    width: 80%;
+}
+
+.footer-section h4 {
+    color: #f2f2f2;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-section ul,
+.footer-section p {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    line-height: 2;
+}
+
+.footer-section ul li a,
+.footer-section p a {
+    color: #d9d9d9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    color: #a6c;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px; /* Adjust icon size */
+}
+
+.social-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+input[type="email"] {
+    padding: 8px;
+    margin-top: 8px;
+    border: none;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004499;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+}
+#mute-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: url('https://icon-library.com/images/mute-unmute-icon/mute-unmute-icon-29.jpg') no-repeat center center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+}
